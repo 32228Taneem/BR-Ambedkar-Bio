@@ -1,0 +1,52 @@
+body{
+    background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/summer-background-abstract-background-wallpaper-use-for-presentation_HDDYoJOhMg_thumb.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    margin-top: 12%;
+   
+}
+body a{
+    text-decoration: none;
+}
+.container{
+    position: relative;
+    
+}
+.con{
+    padding: 1px;
+}
+.divbox con{
+    text-align: center;
+    padding: 1%;
+}
+.divbox{
+    border: 2px solid rgb(13, 13, 13,0.9);
+    margin: 0% 35% 5px 35%;
+    padding-bottom: 2%;
+    border-radius: 20px;
+    
+}
+.fa-circle-user{
+    font-size: 60px;
+}
+.parent-last-button{
+    width: 20%;
+    margin: auto;
+    padding: 2% 2% 0% 2%;
+    border-radius: 20px;
+    z-index: -1;
+    position: absolute;
+    top: 100%;
+    left:38%;
+    background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/summer-background-abstract-background-wallpaper-use-for-presentation_HDDYoJOhMg_thumb.jpg");
+
+    /* background-color: rgb(255, 215, 0.9); */
+}
+.last-button{
+    /* background-color: rgb(255, 215, 0.9); */
+    background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/summer-background-abstract-background-wallpaper-use-for-presentation_HDDYoJOhMg_thumb.jpg");
+    border: none;
+    outline: none;
+    padding: 2%;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#About">About</a>&nbsp
+        <a href="#edu">Education details</a>&nbsp
+        <a href="#erlife">Early Life</a>&nbsp
+        <a href="#pol-care">Political career</a>&nbsp
+        <a href="#marriage">Marriage</a>&nbsp
+        <a href="#CtoB">Conversion to Buddhism</a>&nbsp
+        <a href="#death">Death</a>&nbsp
+        <a href="Gallary.html" target="_blank">Gallary</a>&nbsp
+        <a href="login.html">Login</a>
+    </nav>
+    <h1>Regrestation</h1>
+    <form action="login.html" class="container">
+        <p>
+            Name <br>
+            <input required type="text" placeholder="enter ur  name" name="name" id="name"/>
+            <!-- <input type="text" placeholder="enter ur middle name" name="name"/>
+            <input required type="text" placeholder="enter ur last name" name="name"/> -->
+        </p>
+        <p>
+            Creat  Password <br>
+            <input required type="text" placeholder="password" name="password" id="password"/>
+        </p>
+        <p>
+            Confirm Password <br>
+            <input required type="text" placeholder="password" name="password" id="password"/>
+        </p>
+        <p>
+            User Name <br>
+            <input required type="text" placeholder="User_name" name="uname" id="uname"/>
+        </p>
+        <p>
+            Email id <br>
+            <input required type="email" placeholder="email" name="email"/>
+        </p>
+        <p>
+            Gender <br>
+            <input type="radio" name="gender" />Male
+            <input type="radio" name="gender" />Female
+        </p>
+        <p>
+            Mobile Number <br>
+            <input required type="text" placeholder="Enter ur mobile number">
+        </p>
+        <p>
+            Country <br>
+            <select required>
+                <option value="Select a option">Select a option</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Japan">Japan</option>
+                <option value="China">China</option>
+                <option value="Srilanka">Srilanka</option>
+                <option value="Korea">Korea</option>
+            </select>
+           
+        </p>
+        <p>
+            State <br>
+            <select required>
+                <option value="Select a option">Select a option</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Telengana">Telengana</option>
+                <option value="Kerla">Kerla</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Odissa">Odissa</option>
+                <option value="Maharastra">Maharastra</option>
+            </select>
+        </p>
+        <p>
+            City <br>
+            <select required name="city" id="city">
+                <option value="">Select a option</option>
+                <option value="Vijayawada">Vijayawada</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+                <option value="Tirupati">Tirupati</option>
+            </select>
+        </p>
+        <p>
+            Address <br>
+            <textarea name="Address" id="">Address</textarea>
+        </p>
+        <p>
+            <input required type="checkbox"/>I,Hear by declare that the above information give by me is correct.
+            <input required type="checkbox"/>I accept.
+        </p>
+        <p>
+            <button>Register</button>
+        </p>
+    </form>
+
+    <script>
+        function validate() {
+            var name = document.getElementById("name").value
+            var nameCheck = /^[a-zA-Z]+(?:[a-zA-Z\s]+)*$/
+            var email = document.getElementById("email").value
+            var emailCheck=/^[a-zA-Z0-9.]+@[a-zA-Z]+\.[a-z]{2,3}$/
+            var password=document.getElementById("password").value
+            var passwordCheck=/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{6,}$/
+            var city=document.getElementById("city").value
+            console.log("city value is",city)
+            if (name == "" || name.length < 3) {
+                alert("Fill all the required fields before u submit")
+                return false
+            }
+            if (!name.match(nameCheck)) {
+                alert("Name should have only alphabits")
+                return false
+            }
+            
+            if (!email.match(emailCheck)) {
+                alert("Check ur mailid")
+                return false
+            }
+            
+            if(password==""){
+                alert("Password should not be empty")
+                return false
+            }
+            if(!password.match(passwordCheck)){
+                alert("Password must carry upper,lowe,dig....")
+                return false
+            }
+            if(city=="")
+            {
+                alert("select ur city")
+                return false
+            }
+            return true
+        }
+    </script>
+
+</body>
+</html>
